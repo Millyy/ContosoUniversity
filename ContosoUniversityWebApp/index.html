@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>University of Contoso</title>
+	<meta charset="utf-8" />
+
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/style.css" />
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+</head>
+<body>
+    
+    <!-- Application Insights script. -->
+    <script type="text/javascript">
+    var appInsights=window.appInsights||function(config){
+    function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;for(s.src=config.url||"//az416426.vo.msecnd.net/scripts/a/ai.0.js",u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=["Event","Exception","Metric","PageView","Trace"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+    }({
+        instrumentationKey:"ce9f65b0-598e-4c36-ae1a-99a17e21721c"
+    });
+
+    window.appInsights=appInsights;
+    appInsights.trackPageView();
+    </script>
+
+    <!-- Responsive Slides script - jQuery. -->
+    <script>
+    $(function() {
+    $(".rslides").responsiveSlides();
+    });
+    </script>
+
+    <!-- Navigation bar. -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container ">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand"><center><img src="http://i.imgur.com/Yb3eYTy.png" height="23" /></center></div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-brand-centered">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="../../index.html">Home</a></li>
+                    <li><a href="../../studentlogin.html">Students</a></li>
+                    <li><a href="../../courses.html">Courses</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../../livechat.html">Live Chat</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Makes the content not hide under the navigation bar when squished. -->
+    <table height="50"><tr><td> </td></tr></table>
+
+    <!-- Responsive Slides - Actual images to slideshow. -->
+    <ul class="rslides">
+        <li><img src="http://i.imgur.com/AREUurw.png" alt=""></li>
+        <li><img src="http://i.imgur.com/56b0Z0c.png" alt=""></li>
+        <li><img src="http://i.imgur.com/umj3Ujy.png" alt=""></li>
+        <li><img src="http://i.imgur.com/n9tYLxy.png" alt=""></li>
+    </ul>
+    
+   
+    <!-- All the text on the main page. -->
+    <div class="container"><div class="col-md-4">
+    <!-- Contoso Logo -->
+    <br /><br />
+    <center><img src="http://i.imgur.com/dRMoKMh.png" height="300"></center>
+    </div>
+
+    <div class="col-md-8">
+    <br />
+    <h1>Welcome to the University of Contoso!</h1>
+    <p>Use the navigation to access useful features of this site.</p>
+    <p>
+        <ul>
+            <li><b>Students:</b> Click on the 'Students' link to add courses, see assignments, tests, due dates and more!</li>
+            <li><b>Courses:</b> Click on the 'Courses' link to see all currently available courses.</li>
+            <li><b>Live Chat:</b> Click on the 'Live Chat' link to chat in real time with other students, anywhere! Brought to you by SignalR.</li>
+        </ul>
+    </p>
+
+    <h2>What's New</h2>
+    <p>
+        The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc,
+        Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words.
+        Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this,
+        it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting
+        language is more simple and regular than that of the individual languages.
+    </p>
+    <p>The new common language will be more simple and regular than the existing European languages.</p>
+    <p>
+        It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical
+        Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth.
+        For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most
+        common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
+    </p><br /></p>
+    </div>
+    <p><hr /><br />&copy; 2015 - University of Contoso</p></div>
+    
+</body>
+</html>

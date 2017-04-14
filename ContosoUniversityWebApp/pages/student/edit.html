@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Course - University of Contoso</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../Content/style.css" />
+    <script src="../../scripts/jquery-1.9.1.min.js"></script>
+    <script src="../../scripts/bootstrap.min.js"></script>
+    <script src="../../scripts/courses.js"></script>
+    <script src="../../scripts/MasterModule.js"></script>
+    <script src="../../Scripts/editcourse.js"></script>
+
+</head>
+<body>
+    <!-- Navigation bar. -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container ">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand"><center><img src="http://i.imgur.com/Yb3eYTy.png" height="23" /></center></div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-brand-centered">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li class="active"><a href="../../studentlogin.html">Students</a></li>
+                    <li><a href="../../courses.html">Courses</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="../../livechat.html">Live Chat</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Makes the content not hide under the navigation bar when squished. -->
+    <table height="50"><tr><td> </td></tr></table>
+
+    <div class="container">
+        <h2>Edit Course</h2>
+        <form role="form" name="edit">
+            <div class="form-group">
+                <label for="CourseIDinput">Course ID:</label>
+                <input type="text" class="form-control" id="CourseIDinput" required />
+            </div>
+            <div class="form-group">
+                <label for="CourseNameinput">Course Name:</label>
+                <input type="text" class="form-control" id="CourseNameinput" required />
+            </div>
+            <div class="form-group">
+                <label for="Assignmentinput">Assignment Percentage:</label>
+                <input type="text" class="form-control" id="Assignmentinput" required />
+            </div>
+            <div class="form-group">
+                <label for="AssignmentDueinput">Assignment Due Date:</label>
+                <input type="text" class="form-control" id="AssignmentDueinput" required />
+            </div>
+            <div class="form-group">
+                <label for="Testinput">Test Percentage:</label>
+                <input type="text" class="form-control" id="Testinput" required />
+            </div>
+            <div class="form-group">
+                <label for="Examinput">Exam Percentage:</label>
+                <input type="text" class="form-control" id="Examinput" required />
+            </div>
+            <div class="form-group">
+                <label for="CourseCreditsinput">Credits:</label>
+                <input type="text" class="form-control" id="CourseCreditsinput" required />
+            </div>
+            <div class="btn-toolbar">
+                <button type="submit" class="btn btn-info">Change</button>
+                <button class="btn btn-default" onclick="location.replace(document.referrer);">Cancel</button>
+            </div>
+        </form>
+    </div>
+    
+
+</html>
